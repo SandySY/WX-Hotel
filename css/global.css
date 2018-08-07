@@ -1,0 +1,135 @@
+@charset 'utf-8';
+html
+{
+    font-size: 20px;
+}
+@media screen and (max-width:330px)
+{
+    html
+    {
+        font-size: 18px;
+    }
+}
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+
+    background-repeat: no-repeat;
+    background-position: center;
+            background-origin: content-box;
+    -webkit-background-size: contain;
+            background-size: contain;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /*阻止 apple 高亮效果*/
+    -webkit-background-origin: content-box;
+    -webkit-appearance: none ;
+}
+
+/* 禁止长按链接与图片弹出菜单*/
+
+a,
+img
+{
+    -webkit-touch-callout: none;
+}
+
+/* 禁止ios和android用户选中文字*/
+
+html,
+body
+{
+    -webkit-user-select: none;
+            user-select: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+html,
+body
+{
+    font-family: 'Microsoft Yahei', 'Arial';
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+p,
+dd,
+dl,
+dt,
+ul,
+ol,
+li,
+form
+{
+    font-size: inherit;
+    font-weight: inherit;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+em
+{
+    font-weight: normal;
+    font-style: normal;
+}
+input
+{
+    font-family: 'Microsoft Yahei', 'Arial';
+
+    border: none;
+    outline: none;
+}
+input:focus
+{
+    border: none;
+    outline: none;
+}
+a,
+a:visited
+{
+    text-decoration: none;
+
+    color: inherit;
+
+    -webkit-tap-highlight-color: transparent;
+       -moz-tap-highlight-color: transparent;
+}
+i
+{
+    display: inline-block;
+}
+img
+{
+    font-size: 0;
+    line-height: 0;
+
+    border: none;
+    outline: none;
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
+:before,
+:after
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+            background-origin: content-box;
+    -webkit-background-size: contain;
+            background-size: contain;
+
+    -webkit-background-origin: content-box;
+}

@@ -1,0 +1,350 @@
+html {
+    overflow: scroll;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: auto;
+}
+
+.sliderBox {
+    height: 2.75rem;
+    color: #fff;
+    overflow-x: scroll;
+    overflow-y: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.sliderBox ul {
+    float: left;
+}
+
+.sliderBox li {
+    width: 5.5rem;
+    text-align: center;
+    background: rgba(170, 170, 170, 0.9);
+    float: left;
+    font-size: .6rem;
+    padding: .4rem 0;
+    position: relative;
+}
+
+.sliderBox li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: .5rem;
+    width: 1px;
+    height: 1.2rem;
+    background: #fff;
+}
+
+.sliderBox li:last-child::after {
+    display: none;
+}
+
+.sliderBox li>span {
+    font-size: .45rem;
+    display: block;
+}
+
+.sliderBox li.active {
+    color: #000;
+}
+
+.sliderBox li.active::before {
+    position: absolute;
+    z-index: 3;
+    bottom: -1rem;
+    left: 2.2rem;
+    width: 0;
+    height: 0;
+    content: '';
+    border: .5rem solid transparent;
+    border-top-color: rgba(170, 170, 170, 0.9);
+}
+
+.showPage {
+    width: 100%;
+    /* height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden; */
+}
+
+.showPage li {
+    width: 100%;
+    padding: 2.75rem 0;
+    overflow: hidden;
+    /* height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll; */
+}
+
+.logoBox {
+    overflow: hidden;
+    text-align: center;
+}
+
+.logoImg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.logoText {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-left: .5rem;
+}
+
+.logoH1 {
+    font-size: 1.2rem;
+    display: block;
+    color: #515049;
+}
+
+.logoH2 {
+    font-size: .6rem;
+    display: block;
+    color: #3e3a39;
+}
+
+.logoH3 {
+    font-size: .6rem;
+    display: block;
+    color: #878787;
+}
+
+.showBox1 {
+    margin: .5rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.padImg1 {
+    width: 12rem;
+    height: 11.2rem;
+}
+
+.lineTopText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #468843;
+    padding: 1rem 0;
+    font-size: .75rem;
+    width: 8rem;
+    text-align: center;
+    color: #468843;
+}
+
+.lineBottomText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #468843;
+    padding: 1rem 0;
+    font-size: .75rem;
+    width: 8rem;
+    text-align: center;
+    color: #468843;
+}
+
+.showBox2 {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.showBox2 img {
+    width: 16.55rem;
+    height: 12.45rem;
+}
+
+.showBox2 .title,
+.showBox2 .content {
+    font-size: .6rem;
+    width: 16.55rem;
+    margin: 0 auto;
+    text-align: left;
+    color: #515049;
+}
+
+.showBox2 .content {
+    font-size: .45rem;
+    width: 16.55rem;
+}
+
+.showBox3 {
+    border: 1px solid #468843;
+    width: 16.55rem;
+    margin: 2rem auto 2rem auto;
+    padding: .5rem;
+    position: relative;
+}
+
+.showBox3 .title {
+    position: absolute;
+    top: -.5rem;
+    color: #468843;
+    font-size: .6rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.showBox3 .title>span {
+    padding: 0 .5rem;
+    background: #e6fff9;
+}
+
+.showBox3 .content {
+    text-align: left;
+    color: #515049;
+    font-size: .6rem;
+}
+
+.showBox3 .content>span {
+    display: block;
+    line-height: 1.2rem;
+}
+
+.showBox3 .content>span::before {
+    content: "*";
+    color: #468843;
+}
+
+.showBox4 {
+    overflow: hidden;
+    text-align: center;
+}
+
+.showBox4 span {
+    font-size: .5rem;
+    display: block;
+}
+
+.showBox4 a {
+    display: inline-block;
+    padding: .1rem .5rem;
+    border-radius: 1rem;
+    font-size: .6rem;
+    margin-top: .5rem;
+    color: #fff;
+    background: #00a958;
+}
+
+.showBox5 {
+    overflow: hidden;
+    margin: 1rem auto;
+    width: 16.55rem;
+}
+
+.showBox5 .leftBox,
+.showBox5 .rightBox {
+    width: 7.5rem;
+    overflow: hidden;
+    float: left;
+}
+
+.showBox5 .rightBox {
+    margin-left: 1.55rem;
+}
+
+.showBox5 img {
+    width: 7.5rem;
+}
+
+.showBox5 span {
+    text-align: left;
+    color: #515049;
+    font-size: .6rem;
+}
+
+.showBox5 span>em {
+    font-size: .4rem;
+    line-height: .75rem;
+    display: block;
+}
+
+.showBox6 {
+    border: 1px solid #468843;
+    width: 16.55rem;
+    margin: 6rem auto 2rem auto;
+    padding: .5rem;
+    padding-top: 5rem;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.showBox6 .titleImg {
+    width: 10rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -5rem;
+    top: -50%;
+    margin-top: 3.5rem;
+}
+
+.showBox6 .title {
+    color: #468843;
+    font-size: .6rem;
+    width: 100%;
+    text-align: left;
+    line-height: 1rem;
+}
+
+.showBox6 .content {
+    text-align: left;
+    color: #515049;
+    font-size: .6rem;
+}
+
+.showBox6 .content>span {
+    display: block;
+    line-height: 1.2rem;
+}
+
+.showBox6 .content>span::before {
+    content: "*";
+    color: #468843;
+}
+
+.showBox7 {
+    overflow: hidden;
+    position: relative;
+    font-size: .9rem;
+    color: #75e9b1;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.showBox7 .link {
+    position: absolute;
+    height: 1px;
+    width: 45%;
+    background: #75e9b1;
+}
+
+#lymxJs {
+    border: 1px solid #e7cc85;
+    background: rgba(0, 0, 0, .4);
+}
+
+#lymxJs .title {
+    color: #75e9b1;
+}
+
+#lymxJs .content {
+    color: #e7cc85;
+}
+
+#lymxJs .content>span::before {
+    content: "*";
+    color: #75e9b1;
+}
